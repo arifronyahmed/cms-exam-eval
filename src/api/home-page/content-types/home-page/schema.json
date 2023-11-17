@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "HomePage",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.hero-section"
+    },
+    "faitesDuSportSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "faites-du-sport-section.faites-du-sport-section"
+    },
+    "newsletterCard": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.newsletter-card"
+    }
+  }
+}

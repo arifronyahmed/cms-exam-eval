@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_faites_du_sport_section_faites_du_sport_sections",
+  "info": {
+    "displayName": "FaitesDuSportSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "faitesDuSportText": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.faites-du-sport-section"
+    },
+    "FaitesDuSportImages": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.faites-du-sport-images"
+    },
+    "titleSection": {
+      "type": "string"
+    }
+  }
+}

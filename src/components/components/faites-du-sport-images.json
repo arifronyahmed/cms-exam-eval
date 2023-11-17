@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_faites_du_sport_images",
+  "info": {
+    "displayName": "FaitesDuSportImages"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

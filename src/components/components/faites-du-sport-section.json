@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_faites_du_sport_sections",
+  "info": {
+    "displayName": "FaitesDuSportText",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "listNumber": {
+      "type": "string"
+    }
+  }
+}

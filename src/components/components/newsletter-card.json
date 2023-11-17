@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_components_newsletter_cards",
+  "info": {
+    "displayName": "NewsletterCard",
+    "icon": "envelop",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "newsletterTitle": {
+      "type": "string"
+    },
+    "newsletterText": {
+      "type": "string"
+    },
+    "placeholderText": {
+      "type": "string"
+    },
+    "buttonText": {
+      "type": "string"
+    },
+    "policyText": {
+      "type": "string"
+    }
+  }
+}
