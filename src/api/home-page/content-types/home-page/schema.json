@@ -26,6 +26,11 @@
       "type": "component",
       "repeatable": false,
       "component": "components.newsletter-card"
+    },
+    "advantagesSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.advantages-section"
     }
   }
 }

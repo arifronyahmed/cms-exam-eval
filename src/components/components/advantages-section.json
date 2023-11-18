@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_advantages_sections",
+  "info": {
+    "displayName": "AdvantagesSection"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

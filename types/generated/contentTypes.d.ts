@@ -820,6 +820,7 @@ export interface ApiHomePageHomePage extends Schema.SingleType {
     heroSection: Attribute.Component<'components.hero-section'>;
     faitesDuSportSection: Attribute.Component<'faites-du-sport-section.faites-du-sport-section'>;
     newsletterCard: Attribute.Component<'components.newsletter-card'>;
+    advantagesSection: Attribute.Component<'components.advantages-section'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

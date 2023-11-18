@@ -1,5 +1,17 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface ComponentsAdvantagesSection extends Schema.Component {
+  collectionName: 'components_components_advantages_sections';
+  info: {
+    displayName: 'AdvantagesSection';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.RichText;
+    image: Attribute.Media;
+  };
+}
+
 export interface ComponentsFaitesDuSportImages extends Schema.Component {
   collectionName: 'components_components_faites_du_sport_images';
   info: {
@@ -118,6 +130,7 @@ export interface FaitesDuSportSectionFaitesDuSportSection
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'components.advantages-section': ComponentsAdvantagesSection;
       'components.faites-du-sport-images': ComponentsFaitesDuSportImages;
       'components.faites-du-sport-section': ComponentsFaitesDuSportSection;
       'components.footer-contact': ComponentsFooterContact;
