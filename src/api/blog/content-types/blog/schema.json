@@ -34,6 +34,10 @@
     },
     "blogText": {
       "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "blogTitle"
     }
   }
 }

@@ -1,7 +1,8 @@
 {
   "collectionName": "components_components_testimonial_cards",
   "info": {
-    "displayName": "TestimonialCard"
+    "displayName": "TestimonialCard",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -11,12 +12,11 @@
     "description": {
       "type": "richtext"
     },
-    "avatar": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
+    "post": {
+      "type": "string"
+    },
+    "avatarUrl": {
+      "type": "string"
     }
   }
 }

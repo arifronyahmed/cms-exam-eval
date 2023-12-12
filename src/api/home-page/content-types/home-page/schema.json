@@ -4,7 +4,7 @@
   "info": {
     "singularName": "home-page",
     "pluralName": "home-pages",
-    "displayName": "HomePage",
+    "displayName": "Home Page",
     "description": ""
   },
   "options": {
@@ -31,6 +31,11 @@
       "type": "component",
       "repeatable": false,
       "component": "components.advantages-section"
+    },
+    "testimonialSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.testimonial-section"
     }
   }
 }

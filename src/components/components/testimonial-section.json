@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_testimonial_sections",
+  "info": {
+    "displayName": "TestimonialSection",
+    "icon": "discuss"
+  },
+  "options": {},
+  "attributes": {
+    "testimonialCard": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.testimonial-card"
+    }
+  }
+}

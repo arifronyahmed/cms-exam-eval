@@ -16,9 +16,6 @@
     "placeholderText": {
       "type": "string"
     },
-    "buttonText": {
-      "type": "string"
-    },
     "policyText": {
       "type": "string"
     }

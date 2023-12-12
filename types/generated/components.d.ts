@@ -1,5 +1,18 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface ComponentsAcces extends Schema.Component {
+  collectionName: 'components_components_acces';
+  info: {
+    displayName: 'acces';
+    description: '';
+  };
+  attributes: {
+    parking: Attribute.String;
+    transportInfo: Attribute.String;
+    title: Attribute.String;
+  };
+}
+
 export interface ComponentsAdvantagesSection extends Schema.Component {
   collectionName: 'components_components_advantages_sections';
   info: {
@@ -12,13 +25,16 @@ export interface ComponentsAdvantagesSection extends Schema.Component {
   };
 }
 
-export interface ComponentsFaitesDuSportImages extends Schema.Component {
-  collectionName: 'components_components_faites_du_sport_images';
+export interface ComponentsContactDetails extends Schema.Component {
+  collectionName: 'components_components_contact_details';
   info: {
-    displayName: 'FaitesDuSportImages';
+    displayName: 'ContactDetails';
   };
   attributes: {
-    image: Attribute.Media;
+    title: Attribute.String;
+    address: Attribute.String;
+    email: Attribute.String;
+    telephone: Attribute.String;
   };
 }
 
@@ -93,8 +109,18 @@ export interface ComponentsNewsletterCard extends Schema.Component {
     newsletterTitle: Attribute.String;
     newsletterText: Attribute.String;
     placeholderText: Attribute.String;
-    buttonText: Attribute.String;
     policyText: Attribute.String;
+  };
+}
+
+export interface ComponentsSocialMedia extends Schema.Component {
+  collectionName: 'components_components_social_medias';
+  info: {
+    displayName: 'socialMedia';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
   };
 }
 
@@ -102,11 +128,52 @@ export interface ComponentsTestimonialCard extends Schema.Component {
   collectionName: 'components_components_testimonial_cards';
   info: {
     displayName: 'TestimonialCard';
+    description: '';
   };
   attributes: {
     name: Attribute.String;
     description: Attribute.RichText;
-    avatar: Attribute.Media;
+    post: Attribute.String;
+    avatarUrl: Attribute.String;
+  };
+}
+
+export interface ComponentsTestimonialSection extends Schema.Component {
+  collectionName: 'components_components_testimonial_sections';
+  info: {
+    displayName: 'TestimonialSection';
+    icon: 'discuss';
+  };
+  attributes: {
+    testimonialCard: Attribute.Component<'components.testimonial-card', true>;
+  };
+}
+
+export interface ContactSectionContactSection extends Schema.Component {
+  collectionName: 'components_contact_section_contact_sections';
+  info: {
+    displayName: 'contactSection';
+    description: '';
+  };
+  attributes: {
+    contactDetails: Attribute.Component<'components.contact-details'>;
+    acces: Attribute.Component<'components.acces'>;
+    socialMedia: Attribute.Component<'components.link', true>;
+    hoursInfo: Attribute.Component<'contact-section.hours-info', true>;
+  };
+}
+
+export interface ContactSectionHoursInfo extends Schema.Component {
+  collectionName: 'components_contact_section_hours_infos';
+  info: {
+    displayName: 'hoursInfo';
+    icon: 'clock';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    subTitle: Attribute.String;
+    subTitleText: Attribute.String;
   };
 }
 
@@ -122,7 +189,8 @@ export interface FaitesDuSportSectionFaitesDuSportSection
       'components.faites-du-sport-section',
       true
     >;
-    FaitesDuSportImages: Attribute.Component<'components.faites-du-sport-images'>;
+    image1: Attribute.Media;
+    image2: Attribute.Media;
     titleSection: Attribute.String;
   };
 }
@@ -130,15 +198,20 @@ export interface FaitesDuSportSectionFaitesDuSportSection
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'components.acces': ComponentsAcces;
       'components.advantages-section': ComponentsAdvantagesSection;
-      'components.faites-du-sport-images': ComponentsFaitesDuSportImages;
+      'components.contact-details': ComponentsContactDetails;
       'components.faites-du-sport-section': ComponentsFaitesDuSportSection;
       'components.footer-contact': ComponentsFooterContact;
       'components.hero-section': ComponentsHeroSection;
       'components.link': ComponentsLink;
       'components.navigation': ComponentsNavigation;
       'components.newsletter-card': ComponentsNewsletterCard;
+      'components.social-media': ComponentsSocialMedia;
       'components.testimonial-card': ComponentsTestimonialCard;
+      'components.testimonial-section': ComponentsTestimonialSection;
+      'contact-section.contact-section': ContactSectionContactSection;
+      'contact-section.hours-info': ContactSectionHoursInfo;
       'faites-du-sport-section.faites-du-sport-section': FaitesDuSportSectionFaitesDuSportSection;
     }
   }

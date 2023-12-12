@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_acces",
+  "info": {
+    "displayName": "acces",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "parking": {
+      "type": "string"
+    },
+    "transportInfo": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}
