@@ -1,12 +1,16 @@
 {
   "name": "cms-exam-eval",
-  "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "private": true,
+  "description": "Pro-Arena is a project made only for the purpose of CDA exam evaluation",
+  "license": "MIT",
+  "author": {
+    "name": "Arif Ahmed Rony"
+  },
   "scripts": {
+    "build": "strapi build",
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
     "strapi": "strapi"
   },
   "dependencies": {
@@ -14,18 +18,16 @@
     "@strapi/plugin-users-permissions": "4.15.0",
     "@strapi/strapi": "4.15.0",
     "better-sqlite3": "8.6.0",
+    "pg": "^8.11.3",
+    "pg-connection-string": "^2.6.2",
     "strapi-plugin-populate-deep": "^3.0.1",
     "strapi-plugin-slugify": "^2.3.8"
-  },
-  "author": {
-    "name": "A Strapi developer"
-  },
-  "strapi": {
-    "uuid": "c0722f05-ca74-4ff1-aca1-ab2c3445ac79"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
-  "license": "MIT"
+  "strapi": {
+    "uuid": "c0722f05-ca74-4ff1-aca1-ab2c3445ac79"
+  }
 }
